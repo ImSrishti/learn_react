@@ -33,6 +33,7 @@ class Home extends Component {
   }
 
   clearTimeInterval = () =>{
+    clearInterval(this.state.set_id)
     this.setState({
       counter:0,
       set_id: null
