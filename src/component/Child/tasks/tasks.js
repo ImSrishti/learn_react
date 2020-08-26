@@ -5,7 +5,9 @@ export class tasks extends Component {
         return (
             <div>   
             {this.props.taskarr.map(
-                task => <div key={task} className="tasks">{task} </div> 
+                (task,index) => <div key={task} className="tasks">{task}
+                <div className="button"><button >x</button></div>
+                </div> 
                 )}
                
              </div>
