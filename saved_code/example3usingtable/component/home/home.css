@@ -1,0 +1,21 @@
+.inputBox {
+    height: 60px;
+    width:300px;
+}
+.table{
+    height: 350px;
+    width: 350px;
+}
+.button{
+    height: 60px;
+     width:70px
+}
+.td1{
+    width: 90;
+    height: 50;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    border: 2;
+    border-style: solid;
+}

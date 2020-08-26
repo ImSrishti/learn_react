@@ -1,0 +1,11 @@
+.children{
+         width: 90px;
+          height: 90px;
+          display: table-cell;
+          vertical-align: middle;
+          text-align: center;
+          border: 2;
+          border-style: solid;
+          
+    margin: 10px;
+}
