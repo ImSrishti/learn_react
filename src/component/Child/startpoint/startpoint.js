@@ -18,18 +18,19 @@ export class startpoint extends Component {
         return (
             <div className="startpoint">
             <div className="flex-container">
-                <div>
-                    <input type="text" value={this.state.temptimer} className="Box" onChange={this.timerChangeHandler} />
+                <div className="iBox" >
+                    <input type="text" value={this.state.temptimer} className="inputBox" onChange={this.timerChangeHandler} />
                 </div>
-                <div className="Box" onClick={this.setTimerHandler}>
-                    Start
-                </div>
+                <div className="clearBox">
+                        Clear
+                    </div>
                  </div>
 
                 <div className="flex-container">
-                    <div className="Box">
-                        Clear
-                    </div>
+                    
+                    <div className="Box" onClick={this.setTimerHandler}>
+                    Start
+                </div>
                     <div className="Box">
                         Stop
                     </div>
