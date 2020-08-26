@@ -13,6 +13,12 @@ export class startpoint extends Component {
     setTimerHandler = () => {
         this.props.click(this.state.temptimer)
     }
+    stopTimer = () =>{
+        this.props.click2();
+    }
+    clearTimer = () =>{
+        this.props.click3();
+    }
 
     render() {
         return (
@@ -21,7 +27,7 @@ export class startpoint extends Component {
                 <div className="iBox" >
                     <input type="text" value={this.state.temptimer} className="inputBox" onChange={this.timerChangeHandler} />
                 </div>
-                <div className="clearBox">
+                <div className="clearBox" onClick={this.clearTimer}>
                         Clear
                     </div>
                  </div>
@@ -31,7 +37,7 @@ export class startpoint extends Component {
                     <div className="Box" onClick={this.setTimerHandler}>
                     Start
                 </div>
-                    <div className="Box">
+                    <div className="Box" onClick={this.stopTimer}>
                         Stop
                     </div>
                 </div>

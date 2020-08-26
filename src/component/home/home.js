@@ -28,13 +28,25 @@ class Home extends Component {
       set_id:set_id
     })
   }
+  stopTimerHandler = () =>{
+    clearInterval(this.state.set_id)
+  }
 
+  clearTimeInterval = () =>{
+    this.setState({
+      counter:0,
+      set_id: null
+    })
+  }
 
   render() {
     return (
       <div className="home">
         <div className="label">{this.state.counter}</div>
-        <div><Start click={this.startTimerHandler}/></div>
+        <div><Start click={this.startTimerHandler} 
+                click2={this.stopTimerHandler} 
+                click3={this.clearTimeInterval}/>
+        </div>
       </div>
 
     );
