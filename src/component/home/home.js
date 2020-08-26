@@ -5,11 +5,13 @@ import Start from '../Child/startpoint/startpoint';
 class Home extends Component {
   state = {
     counter: 10,
-    set_id:0
+    set_id:null
   }
   startTimerHandler = (timercount) => {
-    this.setState({
-      set_id:setInterval(() => {
+    if(this.state.set_id){
+      clearInterval(this.state.set_id)
+    }
+    const set_id = setInterval(() => {
         timercount= timercount - 1;
           if (timercount > 0) {
             this.setState({
@@ -21,8 +23,10 @@ class Home extends Component {
           }
          
         }, 1000)
+    
+    this.setState({
+      set_id:set_id
     })
-
   }
 
 
