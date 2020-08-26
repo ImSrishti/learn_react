@@ -1,0 +1,12 @@
+.home{
+  height:500px;
+}
+
+.label{
+  border:2px solid; 
+  width:212px;
+  text-align: center;
+  font-size: 50px;
+  background-color: white;
+  margin:auto;
+}
