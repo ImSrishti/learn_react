@@ -1,0 +1,11 @@
+.tasks{
+    background-color:rgba(255, 182, 193, 0.7);
+    border: 1px solid rgba(78, 10, 47, 0.5) ;
+    width: 300px;
+    height:25px;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    margin : 10px;
+    box-shadow: 0px 0px 2px black;
+}

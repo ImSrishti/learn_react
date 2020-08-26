@@ -1,15 +1,24 @@
 .home{
-  height:700px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+   
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:540px;
+    min-height: 60vh;
+    flex-direction: column;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-.label{
-  border:2px solid; 
-  width:212px;
-  text-align: center;
-  font-size: 50px;
-  background-color: white;
+.flex-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:600px;
+}
+.tasklist{
+    height: 70px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:30px;
 }
