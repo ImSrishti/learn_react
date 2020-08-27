@@ -3,11 +3,8 @@ import './tasks.css'
 export class tasks extends Component {
   
     
-    setRemoveIndex =(event) =>{
-        debugger
-        console.log(event)
-       // this.props.setIndex(index)
-       // console.log(index)
+    setRemoveIndex =(index) =>{
+        this.props.setIndex(index)
     }
     render() {
         
@@ -19,7 +16,7 @@ export class tasks extends Component {
                     
                     {task} 
                     
-                    <div  value={index} className="tasks_close" onClick={this.setRemoveIndex}>
+                    <div  value={index} className="tasks_close" onClick={()=>this.setRemoveIndex(index)}>
                         x
                     </div>
                 </div>

@@ -22,11 +22,14 @@ export class taskopr extends Component {
         this.props.setData(tempArray)
     }
     removeOne = (index) =>{
-        if(this.state.tempdata !== ''){
+        
+        
         const tempArray = [...this.props.data];
         tempArray.splice(index,1)
+        
+        console.log(index)
         this.props.setData(tempArray)
-        }
+        
     }
     
     render() {
