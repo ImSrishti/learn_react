@@ -21,18 +21,27 @@ export class taskopr extends Component {
         const tempArray = [];
         this.props.setData(tempArray)
     }
+    removeOne = (index) =>{
+        if(this.state.tempdata !== ''){
+        const tempArray = [...this.props.data];
+        tempArray.splice(index,1)
+        this.props.setData(tempArray)
+        }
+    }
     
     render() {
         return (
             <div className="taskopr0">
                 
                 <div className="taskopr">
-                    <div><Tasks taskarr={this.props.data}/></div>
+                    <div><Tasks taskarr={this.props.data} setIndex={this.removeOne}/></div>
                  </div>
+                 <div style={{"width" : "370px"}}>
                 <div className="taskopr2">
-                    <div><input type="text" value={this.state.tempdata} onChange={this.tempdataChange}/></div>
-                    <div onClick={this.setTempData}>Add</div>
-                    <div onClick={this.removeAll}>removeall</div>
+                    <div><input style = {{"flexGrow":"2"}} type="text" value={this.state.tempdata} onChange={this.tempdataChange}/></div>
+                    <div style = {{"flexGrow":"1"}} onClick={this.setTempData}>Add</div>
+                    <div style = {{"flexGrow":"1"}} onClick={this.removeAll}>removeall</div>
+                </div>
                 </div>
                 
             </div>

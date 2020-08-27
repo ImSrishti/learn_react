@@ -6,10 +6,8 @@
 }
 
 .taskopr2{
-    display : flex;
-    justify-content: center;
-    align-items: center;
-   
+    display : flex;  
+    justify-content: space-between;
 }
 .taskopr2>div{
     background-color: lightyellow;
@@ -17,6 +15,8 @@
     padding: 2px;
     margin: 2px;
     box-shadow: 0 0 2px 1px black;
+    display : flex;  
+    justify-content: center;
 }
 .taskopr0{
     display : flex;
