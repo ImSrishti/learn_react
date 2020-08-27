@@ -1,29 +1,22 @@
-import React, { Component } from 'react'
-import Taskopr from '../Child/taskopr/taskopr';
-import './home.css'
-export class home extends Component {
-  
-  state={
-    taskarr:['Bob', 'Willy', 'Mini']
-  }
-  setTaskArr = (tempArray) =>{
-    this.setState({
-      taskarr:tempArray
-    })
-  }
+import React from 'react'
+import {Link} from "react-router-dom";
 
-  render() {
+export default function Home() {
+
+    const temp = 1
+    const path = "/child4/"+temp
+
     return (
-     <div className="flex-container">
-       
-      <div className="home">
-      <div className="tasklist">Task List</div>
-        <Taskopr data={this.state.taskarr} setData={this.setTaskArr}/>
-      </div>
-      </div>
-     
-    )
-  }
-}
 
-export default home
+      <div>
+        <ul>
+          <li><Link to="/">home</Link></li>
+          <li><Link to="/child1">child1</Link></li>
+          <li><Link to="/child2">child2</Link></li>
+          <li><Link to="/child3">child3</Link></li>
+          <li><Link to={path}>child4</Link></li>
+        </ul>
+        Home
+      </div>
+    )
+}
