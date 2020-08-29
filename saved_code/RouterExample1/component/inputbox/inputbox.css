@@ -1,0 +1,8 @@
+.inputbox{
+    margin:5px;
+    display:flex;
+    flex-wrap: nowrap;
+}
+.input0{
+ height : 20px;
+}
