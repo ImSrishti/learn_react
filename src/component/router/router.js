@@ -20,6 +20,7 @@ export class home extends Component {
         <Router>
           <Nav/>
           <Switch>
+          <Route exact path="/" children={<Child1/>}></Route>
           <Route path="/child1/:id" children={<Child1/>}></Route>
           <Route path="/child2/:id" children={<Child2/>}></Route>
           <Route path="/child3/:id" children={<Child3/>}></Route>

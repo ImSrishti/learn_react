@@ -1,20 +1,24 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from "react-router-dom";
 import Inputbox from '../inputbox/inputbox.js'
 import './nav.css'
+
 export default function Nav() {
-  let inputText = ''
-  const setInputText = (data) =>{
-    inputText = data ;
+  
+  const [inputText, setinputText] = useState('1');
+
+  const setInputTextMethod = (data) => {
+    setinputText(data);
   }
-   const path1 = "/child1/" + inputText
-   const path2 = "/child2/" + inputText
-   const path3 = "/child3/" + inputText
-   const path4 = "/child4/" + inputText
- 
+
+  const path1 = "/child1/" + inputText
+  const path2 = "/child2/" + inputText
+  const path3 = "/child3/" + inputText
+  const path4 = "/child4/" + inputText
+
   return (
     <div className="nav">
-      <Inputbox click={setInputText}/>
+      <Inputbox click={setInputTextMethod} />
       <div>
         <ul className="links">
           <li className="list"><Link to={path1}>child1</Link></li>

@@ -1,5 +1,6 @@
 import React from 'react'
 import './inputbox.css';
+
 export default function Inputbox(props){
     
   const inputChange = (event) =>{
