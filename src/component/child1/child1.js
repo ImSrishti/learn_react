@@ -9,7 +9,7 @@ export default function Child1(){
   return (
       <div>
         <div className="child">
-          {id} : child1
+          {id} child1
         </div>
       </div>
     )
