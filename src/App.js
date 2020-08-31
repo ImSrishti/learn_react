@@ -1,10 +1,10 @@
 import React from 'react';
-import Router from './component/router/router.js'
+import RouterConfig from './component/router/routerconfig.js'
 
 function App() {
   return (
     <div>
-      <Router/>
+      <RouterConfig/>
     </div>
   );
 }
