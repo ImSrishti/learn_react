@@ -1,12 +1,12 @@
 import React from 'react'
 import '../childcss/child.css'
 
-export default function Child1(){
+export default function Child1(props){
   
   return (
       <div>
         <div className="child">
-          CHILD 1 
+          {props.child} of {props.parent}
         </div>
       </div>
     )

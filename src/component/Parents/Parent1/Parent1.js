@@ -18,7 +18,7 @@ export default function Parent1({routes} ) {
 
       <Switch>
         {routes.map((route, i) => (
-          <RouteWithSubRoutes key={i} {...route} parent={temp}/>
+          <RouteWithSubRoutes key={i} {...route} parent={temp} child={route.component.name}/>
         ))}
       </Switch>
 
