@@ -1,7 +1,7 @@
 import React from 'react'
 import '../childcss/child.css'
 
-export default function Child4(props){
+export default function Child1(props){
   
   return (
       <div>
